@@ -1,0 +1,337 @@
+.background-image {
+  background-image: url('./img.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+
+.header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  position:fixed;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  padding-left: 10px;
+}
+
+.center-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 4 0;
+  margin-right: 40px;
+  white-space: nowrap;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  letter-spacing: 0.005px;
+}
+
+
+.book {
+  margin-right: 40px;
+  padding-top: 20px;
+}
+
+
+.book button {
+  background-color: #141414;
+  border: 3.2px solid white;
+  border-radius: 0;
+  color: white;
+  font-weight: 6550;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+
+.title-container {
+  position: relative; /* Allows the element to move relative to its normal position */
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 1.8rem; /* Use rem for scaling with respect to root font size */
+  margin-top: 9rem;
+  padding: 0.5rem 0; /* Padding for breathing room */
+  width: 100%; /* Ensures the title scales responsively */
+  text-align: center; /* Aligns text to the center of the container */
+}
+
+
+.empty {
+  width: 100%; 
+}
+
+.content1{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background-color: 	#E0E0E0;
+}
+
+
+.photo1 {
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+.image1 {
+  width: 600px; /* Adjust width as needed */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 20px;
+}
+
+
+.content1-text1-heading {
+  color: black;
+  margin-right: 30px;
+  margin-left: 50px;
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+
+.content1-text1-text{
+  color: black;
+  margin-right: 220px;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+
+.content2-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  grid-gap: 20px; /* Space between grid items */
+  padding: 0px 200px;
+  padding-bottom: 30px;
+}
+
+.content2-heading {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.content2-textbox-line1, .content2-textbox-line2 {
+  display: contents; /* Each line will flow into the main grid */
+}
+
+.content2-text1, .content2-text2, .content2-text3,
+.content2-text4, .content2-text5, .content2-text6 {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content2-text1-heading, .content2-text2-heading, .content2-text3-heading,
+.content2-text4-heading, .content2-text5-heading, .content2-text6-heading {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+.content2-text1-text, .content2-text2-text, .content2-text3-text,
+.content2-text4-text, .content2-text5-text, .content2-text6-text {
+  font-size: 17px;
+}
+
+
+
+
+.content3{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background-color: 	#E0E0E0;
+}
+
+.content3-text1-text{
+  color: black;
+  margin-right: 180px;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+
+.content3-text1-heading {
+  color: black;
+  margin-left: 50px;
+  font-size: 22px;
+}
+
+.photo3 {
+  margin-top: 40px;
+}
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.video-element {
+  width: 100%; /* Make the video responsive to container width */
+  max-width: 1600px; /* Set a max width if you want to limit the size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.empty {
+  width: 100%;
+}
+
+
+/* Content4 Section */
+.content4 {
+  display: flex;
+  flex-direction: column; /* Arrange content in a single column */
+  align-items: center; /* Center-align everything horizontally */
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  width: 100%; /* Take full width of the screen */
+  /* max-width: 800px; Set a max-width for the container */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.content4-text {
+  text-align: center;
+  max-width: 600px; /* Limit text width for readability */
+  margin-bottom: 20px; /* Space between text and form */
+}
+
+.content4-text-heading {
+  color: black;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.content4-text-text {
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.content4-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 8px;
+}
+
+.content4-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.content4-form label {
+  margin-bottom: 4px; /* Slight space between the label and the input field */
+  font-weight: bold;
+  color: #444;
+  /* display: flex;
+  flex-direction: column;  */
+}
+
+.content4-form input,
+.content4-form textarea {
+  padding: 8px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px; /* Creates space between label and input */
+  margin-bottom: 16px; /* Space between input fields */
+}
+
+.content4-form button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content4-form button:hover {
+  background-color: #3f3f3f;
+  box-shadow: 0px 4px 8px rgba(0.2, 0.2, 0.2, 0.2); /* Adds a shadow effect */
+}
+
+
+
+/* Footer Section */
+.footer {
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+}
+
+.content3, .content4 {
+  margin: 0;
+}
