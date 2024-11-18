@@ -17,7 +17,8 @@ function AuthPage({ onLogin }) {
         try {
             // Make the API request
             const response = await axios.post(`http://localhost:5010${endpoint}`, { username, password });
-            
+            console.log("Response received from server:", response);
+
             // Check if response.data exists before accessing message
             if (response && response.data && response.data.message) {
                 setMessage(response.data.message);
@@ -30,6 +31,7 @@ function AuthPage({ onLogin }) {
                 onLogin(username);
             }
         } catch (error) {
+            console.error("Error during login/register:", error);
             // Check if error.response exists and handle it
             if (error.response && error.response.data && error.response.data.message) {
                 setMessage(error.response.data.message); // Display error message from server
@@ -45,13 +47,17 @@ function AuthPage({ onLogin }) {
                 <div className='logo' style={{ cursor: 'pointer' }}>
                     <img src={logo} onClick={() => window.location.href = "/"} className='logo' alt='logo'/>
                 </div>
-
+                        <div className="center-buttons">
+                            <button onClick={() => window.location.href = "/"}>Why 360° Tours?</button>
+                            <button onClick={() => window.location.href = "/"}>Our Services</button>
+                            <button onClick={() => window.location.href = "/"}>Contact Us</button>
+                        </div>
                 <div className='book'>
                     <button className='book-button' onClick={() => window.location.href = "/authentication"}>Log in</button>
                 </div>
             </div>
             <div className='login-box'>
-                {/* <h2>{isRegister ? 'Register' : 'Login'}</h2> */}
+                <h2>{isRegister ? 'Register' : 'Login'}</h2>    
                 <form onSubmit={handleSubmit}>
                     <label>
                         Username:

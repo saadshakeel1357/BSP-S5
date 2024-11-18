@@ -9,14 +9,23 @@ app.use(bodyParser.json());
 
 // Load user data from JSON file
 const loadUserData = () => {
-    const data = fs.readFileSync('users.json');
-    return JSON.parse(data).users;
+    try {
+        const data = fs.readFileSync('users.json');
+        return JSON.parse(data).users;
+    } catch (error) {
+        console.error("Error loading user data:", error);
+        return [];
+    }
 };
 
-// Save user data to JSON file
 const saveUserData = (users) => {
-    fs.writeFileSync('users.json', JSON.stringify({ users }));
+    try {
+        fs.writeFileSync('users.json', JSON.stringify({ users }, null, 2));
+    } catch (error) {
+        console.error("Error saving user data:", error);
+    }
 };
+
 
 // Register endpoint
 app.post('/register', (req, res) => {
@@ -36,6 +45,8 @@ app.post('/register', (req, res) => {
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
     const users = loadUserData();
+    console.log("Received login request:", { username, password });
+    console.log("Current users:", users);
 
     const user = users.find(user => user.username === username && user.password === password);
     if (user) {
@@ -44,6 +55,7 @@ app.post('/login', (req, res) => {
         res.status(400).json({ message: 'Invalid credentials' });
     }
 });
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
