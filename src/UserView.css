@@ -1,0 +1,83 @@
+.AuthPage {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure the page takes the full viewport height */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body takes up the full viewport height */
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+}
+
+
+/* Center the login box */
+.user-dash {
+    max-width: 300px;
+    margin: 50px auto; /* Centers the box */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+.user-dash h2 {
+    margin-bottom: 30px;
+    font-weight: bold; /* Ensure headings match form1's style */
+}
+
+.user-dash label {
+    margin-bottom: 4px; /* Match form1 spacing */
+    font-weight: bold;
+    color: #444; /* Match form1 label color */
+}
+
+.user-dash input {
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px; /* Space between label and input */
+    margin-bottom: 16px; /* Space between input fields */
+}
+
+.user-dash button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #000000; /* Match form1 button background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Match form1 hover effect */
+}
+
+.user-dash button:hover {
+    background-color: #3f3f3f; /* Match form1 hover effect */
+    box-shadow: 0px 4px 8px rgba(0.2, 0.2, 0.2, 0.2); /* Match form1 shadow effect */
+}
+
+
+
+.user-view-heading{
+        position: relative; /* Allows the element to move relative to its normal position */
+        color: black;
+        margin-top: 9rem;
+        padding: 0.5rem 0; /* Padding for breathing room */
+        width: 100%; /* Ensures the title scales responsively */
+        text-align: center; /* Aligns text to the center of the container */
+      }
+
+
