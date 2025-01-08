@@ -9,7 +9,7 @@ In the project directory, you can run:
 
 ### `npm run deploy`
 
-use this to publish the code online (i guess)
+use this to publish the code online 
 
 
 ### `npm start`
